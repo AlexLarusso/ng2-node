@@ -38,9 +38,12 @@
     "babel-loader": "^6.2.7",
     "babel-preset-es2015-webpack": "^6.4.3",
     "concurrently": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "html-loader": "^0.4.4",
     "lite-server": "^2.2.2",
     "pug": "^2.0.0-beta6",
     "pug-loader": "^2.3.0",
+    "style-loader": "^0.13.1",
     "typescript": "^2.0.3"
   }
 }

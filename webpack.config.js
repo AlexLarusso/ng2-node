@@ -15,12 +15,13 @@ module.exports = {
   },
   watch: NODE_ENV === 'development',
   devtool: NODE_ENV ? 'cheap-inline-module-source-map' : null,
+  verbose: true,
   module: {
-    loaders: [{
-      test: /\.ts$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader?presets[]=es2015!ts-loader'
-    }]
+    loaders: [
+      {test: /\.ts$/, exclude: /node_modules/, loader: 'babel-loader?presets[]=es2015!ts-loader'},
+      {test: /\.html$/,loader: 'html-loader'},
+      { test: /\.css$/, loader: "style-loader!css-loader" }
+    ]
   },
   resolve: {
     root: __dirname,

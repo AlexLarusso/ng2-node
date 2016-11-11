@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-
 @Component({
   selector: 'my-app',
-  template: '<h1>My {{name}} Angular App</h1>'
+  template: `
+    <h1>{{title}}</h1>
+    <my-heroes></my-heroes>
+  `
 })
 export class AppComponent {
-  name: string;
-  constructor() {
-    this.name = 'Third';
-  }
+  title = 'Tour of Heroes';
 }

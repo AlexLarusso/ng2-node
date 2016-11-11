@@ -9,6 +9,7 @@ const db = require('./api'),
     db.removeDocuments();
     db.insertDocuments(mocks);
     db.findDocuments();
+    db.close();
   });
 
 })();
